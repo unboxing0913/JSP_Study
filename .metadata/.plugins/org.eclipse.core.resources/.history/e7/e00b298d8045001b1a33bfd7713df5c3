@@ -1,0 +1,10 @@
+package com.mission.javabeans;
+
+public class MovieBean {
+	private String title;
+	private int pirce;
+	private String director;
+	private String actor;
+	private String synopsis;
+	private String genre;
+}

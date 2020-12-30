@@ -1,0 +1,9 @@
+package com.javalec.ex;
+
+public class MemberDto {
+
+	public MemberDto() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

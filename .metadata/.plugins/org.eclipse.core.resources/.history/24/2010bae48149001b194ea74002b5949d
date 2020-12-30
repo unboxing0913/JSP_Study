@@ -1,0 +1,11 @@
+package com.javalec.daotoex;
+
+
+// DTO(Data Transfer Object), VO(value Object)
+public class MemberDTO {
+
+	public MemberDTO() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

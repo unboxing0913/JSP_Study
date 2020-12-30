@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>게시판 글쓰기</h2>
+<table>
+<tr>
+<td>제목</td><td><input type="text" name=""></td>
+</tr>
+<tr>
+<td>가격</td><td><input type="text" name=""></td>
+</tr>
+<tr>
+<td>감독</td><td><input type="text" name=""></td>
+</tr>
+<tr>
+<td>출연배우</td><td><input type="text" name=""></td>
+</tr>
+<tr>
+<td>시놉시스</td><td><pre><input type="text" name=""></pre></td>
+</tr>
+</table>
+</body>
+</html>

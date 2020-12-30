@@ -1,0 +1,46 @@
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.Connection"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%!
+    Connection conn=null;
+    PreparedStatement pstmt=null; //sql 명령어를 쉽게사용하기위해 선언
+    String url="jdbc:oracle:thin:@localhost:1521:xe";
+    String uid="scott";
+    String pass="tiger";
+    String sql="insert into member values(?,?,?,?,?,?)"; //이런식으로
+    %>                                <!--1,2,3,4,5,6  -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>결과 페이지</title>
+</head>
+<body>
+<%
+request.setCharacterEncoding("utf-8");
+String name=request.getParameter("name");
+String userid=request.getParameter("userid");
+String pwd=request.getParameter("pwd");
+String phone=request.getParameter("email");
+String phone=request.getParameter("phone");
+String admin=request.getParameter("admin");
+
+
+	try{
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		conn=DriverManager.getConnection(url,uid,pass);
+		pstmt=conn.perpareStatement(sql);
+		
+		pstmt.setString(1, name); //?의 1번
+		pstmt.setString(2, userid); //?의 2번
+		pstmt.setString(3, pwd);//?의 3번
+		pstmt.setString(4, email);//?의 4번
+		pstmt.setString(5, phone);//?의 5번
+		pstmt.setString(6, Integer.parseInt(admin));//?의 6번 number타입
+	
+	}
+
+%>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" import="java.sql.ResultSet" import ="java.sql.Statement"
+    import ="java.sql.Connection"
+    %>
+    
+	<%!
+	Connection connection;
+	Statement statement;
+	ResultSet resultSet;
+	String name,id,pw,phone1,phone2,phone3,gender;
+	%>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+request.setCharacterEncoding("utf-8");
+id=request.getParameter("id");
+pw=request.getParameter("pw");
+String query="select * from member where id='"+id+"'and pw='"+pw+"'"; // 조회하기위한 쿼리문
+
+try {
+connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","scott","tiger");
+statement=connection.createStatement();
+resultSet = statement.executeQuery(query); //조회
+
+while(resultSet.next()) {
+name = resultSet.getString("name");
+id = resultSet.getString("id");
+pw = resultSet.getString("pw");
+phone1 = resultSet.getString("phone1");
+phone2 = resultSet.getString("phone2");
+phone3 = resultSet.getString("phone3");
+gender = resultSet.getString("gender");
+
+%>
+
+<form action="ModifyOk" method="post">
+이름:<input type="text" name="name">
+</form>
+</body>
+</html>

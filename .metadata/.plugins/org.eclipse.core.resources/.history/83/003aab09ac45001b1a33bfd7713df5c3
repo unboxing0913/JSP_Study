@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="" method="post"> <!-- 로그인정보가 기존디비데이터와 맞는지 확인하기위해 전송 -->
+아이디 : <input type="text" name="id"><br>
+비밀번호 : <input type="password" name="pw"><br>
+<input type="submit" value="로그인"> <input type="reset" value="다시입력">
+</form>
+</body>
+</html>

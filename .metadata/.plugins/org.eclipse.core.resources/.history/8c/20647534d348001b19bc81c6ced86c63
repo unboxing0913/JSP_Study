@@ -1,0 +1,44 @@
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.Connection"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%!
+    Connection conn=null;
+    PreparedStatement pstmt=null; //sql 명령어를 쉽게사용하기위해 선언
+    String url="jdbc:oracle:thin:@localhost:1521:xe";
+    String uid="scott";
+    String pass="tiger";
+    String sql="insert into member values(?,?,?,?,?,?)"; //이런식으로
+    %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>결과 페이지</title>
+</head>
+<body>
+<%
+request.setCharacterEncoding("utf-8");
+String name=request.getParameter("name");
+String userid=request.getParameter("userid");
+String pwd=request.getParameter("pwd");
+String phone=request.getParameter("phone");
+String admin=request.getParameter("admin");
+
+
+try{
+	Class.forName("oracle.jdbc.driver.OracleDriver");
+	conn=DriverManager.getConnection(url,uid,pass);
+	pstm=conn.perpareStatement(sql);
+	
+	pstmt.setString(arg0, arg1);
+	pstmt.setString(arg0, arg1);
+	pstmt.setString(arg0, arg1);
+	pstmt.setString(arg0, arg1);
+	pstmt.setString(arg0, arg1);
+
+}
+
+%>
+</body>
+</html>

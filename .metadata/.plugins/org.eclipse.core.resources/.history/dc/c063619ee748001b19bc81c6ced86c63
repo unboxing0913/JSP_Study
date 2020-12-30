@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="" method="post">
+<h2>정보 입력폼</h2>
+<table>
+<tr>
+<td></td><td></td>
+</tr>상품명:<input type="text" name="name"><br>
+가격:
+설명:
+</table>
+</form>
+</body>
+</html>

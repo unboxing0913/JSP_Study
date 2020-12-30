@@ -1,0 +1,5 @@
+function infoConfirm(){
+	if(documment.reg_frm.id.value.length == 0){
+			alert("아이디는 필수 사항입니다.")
+		}
+}
