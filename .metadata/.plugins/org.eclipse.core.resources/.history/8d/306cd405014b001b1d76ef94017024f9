@@ -1,0 +1,25 @@
+<%@page import="com.javalec.ex.MemberDao"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+//한글인코딩
+request.setCharacterEncoding("Utf-8");
+
+//넘어온 아이디와 비번 값 변수에 저장
+String id=request.getParameter("id");
+String pw=request.getParameter("pw");
+
+//Dao 인스턴스 생성
+MemberDao dao=MemberDao.getInstance();
+int checkNum = dao.userCheck(id,pw);
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

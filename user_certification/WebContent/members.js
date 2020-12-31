@@ -1,3 +1,4 @@
+//회원가입시
 function infoConfirm(){
 	
 	if(document.reg_frm.id.value.length == 0){
@@ -46,6 +47,8 @@ function infoConfirm(){
 				
 }
 
+
+//회원정보수정시 
 function updateInfoConfrim(){
 	
 	if(document.reg_frm.pw.value == ""){

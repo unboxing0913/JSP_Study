@@ -10,6 +10,7 @@
 </head>
 <body>
 <%request.setCharacterEncoding("UTF-8"); %>
+<!-- 자바빈으로 dto에 정보를 보낸다 -->
 <jsp:useBean id="dto" class="com.javalec.ex.MemberDto"></jsp:useBean>
 <jsp:setProperty property="*" name="dto"/> <!-- 자바빈에 모든 정보저장 -->
 <%
@@ -29,7 +30,7 @@ if(dao.confirmId(dto.getId())==MemberDao.MEMBER_EXISTENT){
 }else{
 		int ri=dao.insertMember(dto);
 		if(ri==MemberDao.MEMBER_JOIN_SUCCESS){
-		//
+		//session.setAttribute("id",dto.getId());//
 %>
 		<script type="text/javascript">
 			alert("회원가입을 축하합니다!");

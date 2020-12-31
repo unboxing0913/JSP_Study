@@ -7,9 +7,7 @@
 <title>Insert title here</title>
 <!-- https://itmusician.tistory.com/22참고 -->
 <!-- https://rwd337.tistory.com/28 참고  -->
-<script type="text/javascript" src="members.js">
-
-</script>
+<script type="text/javascript" src="members.js"></script><!-- 자바스크립트사용 -->
 </head>
 <body>
 <form action="joinOk.jsp" method="post" name="reg_frm">
