@@ -29,22 +29,23 @@ if(dao.confirmId(dto.getId())==MemberDao.MEMBER_EXISTENT){
 <%
 }else{
 		int ri=dao.insertMember(dto);
+		
 		if(ri==MemberDao.MEMBER_JOIN_SUCCESS){
-		//session.setAttribute("id",dto.getId());//
+		session.setAttribute("id",dto.getId());//
 %>
 		<script type="text/javascript">
 			alert("회원가입을 축하합니다!");
-			document.laction.href="login.jsp"; //login.jsp페이지로 이동(자바스크립트처리방식)
+			document.location.href="login.jsp"; //login.jsp페이지로 이동(자바스크립트처리방식)
 		</script>
 <%
 		}else{
 %>
 		<script type="text/javascript">
 			alert("회원가입에 실패했습니다.");
-			document.laction.href="login.jsp"; 
+			document.location.href="login.jsp"; 
 		</script>
 <%
-	 }
+	 	}
 }
 %>		
 	

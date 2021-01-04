@@ -2,6 +2,8 @@
 <%@page import="com.javalec.ex.MemberDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
+
 	
 <!DOCTYPE html>
 <html>
@@ -47,9 +49,9 @@ if(checkNum == -1){
 <%
 	}else{ //로그인 성공시 세션값 설정
 		String name = dto.getName();	
-		session.setAttribute("id",id);
-		session.setAttribute("name",name);
-		session.setAttribute("ValidMen","yes"); //main에서 처리하기위한 세션
+		session.setAttribute("id", id);
+		session.setAttribute("name", name);
+		session.setAttribute("ValidMem", "yes"); //main에서 처리하기위한 세션
 		response.sendRedirect("main.jsp"); //서버가 클라이언트한테 재요청		
 	}
 	

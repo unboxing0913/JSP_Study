@@ -40,7 +40,7 @@ public class MemberDao {
 		
 		Connection connection=null;
 		PreparedStatement pstmt=null;
-		String query="insert into dto_member values(?,?,?,?,?,?)";
+		String query="insert into dto_members values(?,?,?,?,?,?)";
 		
 		try {
 			connection=getConnection();//
@@ -81,7 +81,7 @@ public class MemberDao {
 		Connection connection=null; /*초기화문은 try안에 들어가있으면 안됨*/
 		PreparedStatement pstmt=null;
 		ResultSet set = null;
-		String query="select id from dto_member where id=?";
+		String query="select id from dto_members where id=?";
 		
 		try {
 		connection = getConnection();//
@@ -120,11 +120,11 @@ public class MemberDao {
 	//로그인 시도시 아이디 비밀번호 체크
 	public int userCheck(String id,String pw) {
 		int ri=0;
-		String dbpw;
+		String dbPw;
 		Connection connection=null; 
 		PreparedStatement pstmt=null;
 		ResultSet set = null;
-		String query = "select pw from dto_member where id=?";
+		String query = "select pw from dto_members where id=?";
 		
 		try{			
 			connection=getConnection();
@@ -132,8 +132,8 @@ public class MemberDao {
 			pstmt.setString(1, id);
 			set=pstmt.executeQuery();
 			if(set.next()) { //로그인성공
-				dbpw = set.getString("pw"); //가져온 pw값이 dbpw 와 같다면
-				if(dbpw.equals(pw)) {
+				dbPw = set.getString("pw"); //가져온 pw값이 dbpw 와 같다면
+				if(dbPw.equals(pw)) {
 					ri=MemberDao.MEMBER_JOIN_SUCCESS;
 				}else { //비밀번호 오류 (가져온pw값이 dbpw값과 다를때
 					ri=MemberDao.MEMBER_LOGIN_PW_NO_GOOD;
@@ -171,7 +171,7 @@ public class MemberDao {
 		Connection connection=null; 
 		PreparedStatement pstmt=null;
 		ResultSet set = null;
-		String query = "select * from dto_member where id=?";
+		String query = "select * from dto_members where id=?";
 		MemberDto dto= null;
 		
 		try {
