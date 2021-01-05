@@ -7,15 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="12_colorSelect.jsp">
-<label for="color">색상을 선택하세요</label><br>
-<select id="color" name="color">
-	<option value="1">빨강</option>
-	<option value="2">초록</option>
-	<option value="3">파랑</option>
+<form action="13_fruitSelect.jsp">
+<label for="fruit">과일을 선택하세요</label><br>
+<select name="fruit">
+	<option value="1">사과</option>
+	<option value="2">메론</option>
+	<option value="3">바나나</option>
 </select>
 <input type="submit" value="전송">
 </form>
 </body>
 </html>
-
