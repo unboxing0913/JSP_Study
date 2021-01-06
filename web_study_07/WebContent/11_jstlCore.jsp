@@ -8,6 +8,9 @@
 <title>Insert title here</title>
 </head>
 <body>
+<!-- core 태그 (11 ~ 22학습까지) -->
+<!-- 일반 프로그램이 언어에서 제공하는 것과 유사한 변수선언,실행흐름의 제어기능  -->
+<!-- 다른 JSP페이지로 이동하는 기능 제공 -->
 <c:set var="msg" value="Hello"/> <!-- 변수저장 (value에 넣는방식)-->
 \${msg}=${msg}<hr>
 

@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="jdbc_project_3" path="/jdbc_project_3" reloadable="true" source="org.eclipse.jst.jee.server:jdbc_project_3"/><Context docBase="jdbc_project_4" path="/jdbc_project_4" reloadable="true" source="org.eclipse.jst.jee.server:jdbc_project_4"/><Context docBase="user_certification" path="/user_certification" reloadable="true" source="org.eclipse.jst.jee.server:user_certification"/><Context docBase="web_study_07" path="/web_study_07" reloadable="true" source="org.eclipse.jst.jee.server:web_study_07"/></Host>
+      <Context docBase="jdbc_project_3" path="/jdbc_project_3" reloadable="true" source="org.eclipse.jst.jee.server:jdbc_project_3"/><Context docBase="jdbc_project_4" path="/jdbc_project_4" reloadable="true" source="org.eclipse.jst.jee.server:jdbc_project_4"/><Context docBase="user_certification" path="/user_certification" reloadable="true" source="org.eclipse.jst.jee.server:user_certification"/><Context docBase="web_study_07" path="/web_study_07" reloadable="true" source="org.eclipse.jst.jee.server:web_study_07"/><Context docBase="pro14" path="/pro14" reloadable="true" source="org.eclipse.jst.jee.server:pro14"/></Host>
     </Engine>
   </Service>
 </Server>
