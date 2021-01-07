@@ -5,8 +5,12 @@ C:\it\jsp_lecture\jsp_workspace_lecture\.metadata\.plugins\org.eclipse.jst.jsp.c
 \jdbc_project_2\src
 C:\it\jsp_lecture\jsp_workspace_lecture\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\531692786.index
 \jdbc_project\src
+C:\it\jsp_lecture\jsp_workspace_lecture\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4239720713.index
+\web_study_09\src
 C:\it\jsp_lecture\jsp_workspace_lecture\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\377678184.index
 \web_study_03\src
+C:\it\jsp_lecture\jsp_workspace_lecture\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4067213163.index
+\web_study_09\src
 C:\it\jsp_lecture\jsp_workspace_lecture\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1822461392.index
 \web_study_02\src
 C:\it\jsp_lecture\jsp_workspace_lecture\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1502377247.index

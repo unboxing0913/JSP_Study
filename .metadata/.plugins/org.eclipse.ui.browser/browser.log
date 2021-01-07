@@ -130,3 +130,8 @@
 1월 05, 2021 17:52:24.408 NEW SESSION
 1월 05, 2021 17:52:24.408 [15056:11628:0105/175224.401:ERROR:device_event_log_impl.cc(211)] [17:52:24.400] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
 1월 05, 2021 17:58:47.422 [7456:15148:0105/175847.422:ERROR:device_event_log_impl.cc(211)] [17:58:47.422] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+
+1월 07, 2021 12:08:47.244 NEW SESSION
+1월 07, 2021 12:08:47.244 [2608:14216:0107/120847.243:ERROR:device_event_log_impl.cc(211)] [12:08:47.243] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+1월 07, 2021 12:18:43.965 [0107/121843.965:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+1월 07, 2021 13:28:13.688 [2608:14216:0107/132813.688:ERROR:device_event_log_impl.cc(211)] [13:28:13.687] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
