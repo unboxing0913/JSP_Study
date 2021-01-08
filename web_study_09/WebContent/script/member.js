@@ -29,20 +29,27 @@ function loginCheck() {
 }
 
 function idCheck(){
+  
    if(document.frm.userid.value==""){
    alert("아이디 입력");
    document.frm.userid.focus();
    return false;
    }
+
+   if (document.frm.userid.value.length < 4) {
+   alert("아이디는 4글자이상이어야 합니다.");
+   frm.userid.focus();
+   return false;
+   }
+	
    var url = "idCheck.do?userid="+document.frm.userid.value;
    var setting = "toolbar=no, menubar=no, scrollbars=yes, resizable=no,"+
                 "width=450, height=200";
    
    window.open(url,"_blank_1",setting);
-
 }
 
-function idOk(userid){
+function idOk(){
 	
 	opener.frm.userid.value = document.frm.userid.value;
 	

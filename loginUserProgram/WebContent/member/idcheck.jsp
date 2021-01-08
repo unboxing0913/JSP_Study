@@ -12,7 +12,7 @@
 	<h2>아이디 중복확인</h2>
 	<form action="idCheck.do" method="get" name="frm">
 		아이디 <input type=text name="userid" value="${userid}"> 
-		 <!--   <input type=submit	value="중복 체크"> --><br> 
+		    <!--  <input type=submit	value="중복 체크"> --> <br> 
 		<c:if test="${result == 1}">
 			<script type="text/javascript">
 				opener.document.frm.userid.value = "";

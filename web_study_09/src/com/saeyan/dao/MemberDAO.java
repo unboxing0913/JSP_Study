@@ -64,7 +64,7 @@ public class MemberDAO {
 	result 값 : 테이블이 존재하면 1 , pwd틀리면 0을 userid가 존재하지않으면 -1을 반환*/
 	public int userCheck(String userid,String pwd) {
 		int result=-1;
-		String sql="select pwd form member where userid=?";
+		String sql="select pwd from member where userid=?";
 		Connection conn=null;
 		PreparedStatement pstmt=null;
 		ResultSet rs=null;

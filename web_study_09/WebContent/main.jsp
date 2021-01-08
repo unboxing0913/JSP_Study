@@ -19,7 +19,7 @@
 	<input type="submit" value="로그아웃">&nbsp;&nbsp;
 	
 	<!-- 회원정보수정 : userid를 들고 memberUpdateServlet의 doGet메소드로 이동 -->
-	<input type="button" value="회원 정보 변경" onclick="location.href='memberUpdate?userid=${loginUser.userid}'" >
+	<input type="button" value="회원 정보 변경" onclick="location.href='MemberUpdate.do?userid=${loginUser.userid}'" >
 	 <input type="button" value="삭제" onclick="deleteCheck('${loginUser.userid}')">
 	</td>
 </tr>	

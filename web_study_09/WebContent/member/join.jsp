@@ -20,11 +20,13 @@
 	
 	<tr>
 	<td>아이디</td>
-	<td><input type="text" name="userid" size="20">*
+	<td>
+		<input type="text" name="userid" size="20">*
 		<input type="hidden" name="reid" size="20">
 		<!-- 중복체크하기위해 존재  -->
 		
-		<input type="button" name="id_check" value="중복 체크" onclick="idCheck()"></td>	
+		<input type="button" value="중복 체크" onclick="idCheck()">
+	</td>
 	</tr>
 	
 	<tr>
@@ -59,6 +61,9 @@
 	<input type="reset" value="취소">
 	</td>	
 	</tr>	
+	<tr>
+		<td colspan="2">${message }</td>
+	</tr>
 </table>
 </form>
 </body>

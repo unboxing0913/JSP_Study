@@ -41,7 +41,7 @@ public class JoinServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
+		//doGet(request, response);
 		request.setCharacterEncoding("utf-8");
 		String name = request.getParameter("name");
 		String userid = request.getParameter("userid");
