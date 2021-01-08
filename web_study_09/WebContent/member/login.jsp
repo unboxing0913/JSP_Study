@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>로그인 페이지</title>
 <script type="text/javascript" src="script/member.js"></script>
 </head>
 <body>
@@ -19,7 +19,6 @@
 <td>암호</td>
 <td><input type="password" name="pwd"></td>
 </tr>
-
 <tr>
 <td colspan="2" align="center">
 <input type="submit" value="로그인" onclick="return loginCheck()">&nbsp;&nbsp;

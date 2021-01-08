@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script type="text/javascript" src="script/member.js"></script>
 </head>
 <body>
 <h2>회원 가입</h2>
@@ -21,7 +22,9 @@
 	<td>아이디</td>
 	<td><input type="text" name="userid" size="20">*
 		<input type="hidden" name="reid" size="20">
-		<input type="button" value="중복 체크" onclick="idCheck()"></td>	
+		<!-- 중복체크하기위해 존재  -->
+		
+		<input type="button" name="id_check" value="중복 체크" onclick="idCheck()"></td>	
 	</tr>
 	
 	<tr>
@@ -52,8 +55,8 @@
 	
 	<tr>
 	<td colspan="2" align="center">
-	<input type="submit" value="확인" onclick="return joinCheck()">
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="취소">
+	<input type="submit" value="확인" onclick="return joinCheck()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="reset" value="취소">
 	</td>	
 	</tr>	
 </table>

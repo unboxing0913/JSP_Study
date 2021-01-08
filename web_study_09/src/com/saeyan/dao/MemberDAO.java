@@ -9,7 +9,7 @@ import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
 import com.saeyan.dto.MemberVO;
-//https://m.blog.naver.com/roropoly1/221004477596
+//https://jamesyleather.tistory.com/370
 //https://m.blog.naver.com/PostView.nhn?blogId=roropoly1&logNo=221009133774&proxyReferer=https:%2F%2Fwww.google.com%2F
 /*로그인 처리 MVC 패턴*/
 public class MemberDAO {
@@ -27,6 +27,7 @@ public class MemberDAO {
 	
 	/*연결메소드*/
 	public Connection getConnection() throws Exception{
+		
 		Context context = null;
 		DataSource dataSource = null;
 		Connection connection = null;
@@ -40,7 +41,23 @@ public class MemberDAO {
 		}
 		
 		return  connection;
-	}
+	}		
+	 
+/*	public Connection getConnection(){
+	        // 블럭 후 alt+shift+z 후 try block
+	        Connection conn = null;
+	        
+	        try {
+	            Context initContext = new InitialContext();
+	            Context envContext  = (Context)initContext.lookup("java:/comp/env");
+	                                                        // myoracle <-- context.xml
+	            DataSource ds = (DataSource)envContext.lookup("jdbc/myoracle");
+	            conn = ds.getConnection();
+	        } catch(Exception e) {
+	            e.printStackTrace();
+	        }
+	        return conn;
+	    } */
 	
 	/*사용자 인증시 사용
 	사용자가 입력한 id pwd 일치하는지 확인
@@ -103,6 +120,7 @@ public class MemberDAO {
 			rs=pstmt.executeQuery();
 			
 			if(rs.next()) {
+				mVo = new MemberVO(); //
 				mVo.setName(rs.getString("name"));
 				mVo.setUserid(rs.getString("userid"));
 				mVo.setPwd(rs.getString("pwd"));
@@ -133,6 +151,7 @@ public class MemberDAO {
 	/*중복확인
 	해당 아이디가 있는지 없는지 확인하는 메소드 ( 1있음 ,-1없음 )*/
 	public int confirmID(String userid) {
+		System.out.println("confirmID dao");
 		int result=-1;
 		String sql="select userid from member where userid=?";
 		Connection conn=null;

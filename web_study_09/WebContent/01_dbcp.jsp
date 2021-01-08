@@ -17,7 +17,7 @@ DataSource dataSource=null;
 Connection connection =null;
 try{
 	context=new InitialContext();
-	dataSource= (DataSource)context.lookup("java:comp/env/jdbc/");
+	dataSource= (DataSource)context.lookup("java:comp/env/jdbc/Oracle11g");
 	connection=dataSource.getConnection();
 }catch(Exception e){
 	e.printStackTrace();

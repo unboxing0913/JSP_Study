@@ -32,11 +32,9 @@ public class IdCheckServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String userid=request.getParameter("userid");
 		MemberDAO mDao=MemberDAO.getInstance();  
-		int result=mDao.confirmID(userid); //idcheck.jsp 에서 값을알수있게 받아옴
+		int result=mDao.confirmID(userid); 
 		request.setAttribute("result", result);
 		request.setAttribute("userid",userid);
-		
-		//idCheck.jsp 로 보내는방법
 		RequestDispatcher dispatcher=request.getRequestDispatcher("member/idCheck.jsp");
 		dispatcher.forward(request,response);
 		
