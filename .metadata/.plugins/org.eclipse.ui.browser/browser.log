@@ -173,3 +173,8 @@
 1월 08, 2021 20:21:11.159 [0108/202111.158:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
 1월 08, 2021 20:24:09.922 [14808:9224:0108/202409.922:ERROR:device_event_log_impl.cc(211)] [20:24:09.922] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
 1월 08, 2021 21:05:34.992 [1732:1944:0108/210534.992:ERROR:device_event_log_impl.cc(211)] [21:05:34.992] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+
+1월 11, 2021 11:48:23.663 NEW SESSION
+1월 11, 2021 11:48:23.663 [11040:10604:0111/114823.663:ERROR:device_event_log_impl.cc(211)] [11:48:23.672] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+1월 11, 2021 11:58:16.424 [0111/115816.424:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+1월 11, 2021 14:00:32.381 [11040:10604:0111/140032.381:ERROR:device_event_log_impl.cc(211)] [14:00:32.381] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
