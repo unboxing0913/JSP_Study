@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class MemberController
  */
-@WebServlet("/member/*")
+//@WebServlet("/member/*")
 public class MemberController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -51,7 +51,7 @@ public class MemberController extends HttpServlet {
 		String action=request.getPathInfo(); //url에서 요청명을 가져온다.
 		System.out.println("action:"+action);
 		
-		if(action == null || action.contentEquals("listMember.do")) {//최초 요청 혹은 회원 조회이면 조회 페이지 
+		if(action == null || action.equals("listMember.do")) {//최초 요청 혹은 회원 조회이면 조회 페이지 
 		    List<MemberVO> membersList = memberDAO.listMembers();  //요청에 대해 외원 정보를 조회
 			request.setAttribute("membersList", membersList);//조회한 정보를 request에 바인딩
 			nextPage = "/test01/listMembers.jsp";
